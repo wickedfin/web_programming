@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Table & Form test</title>
+    </head>
+    <body>
+        <h2>Register Form</h2>
+        <form action="results.html" method="get">
+            <fieldset>
+                <legend>Basic Info</legend>
+                Name: <input type="text" id="userName" name="userName" />
+                Password: <input type="password" name="" id="pw" name="userpassword">
+                <br /><br />
+                Gender: 
+                <input type="radio" id="sex_male" name="sex" value="male">
+                <label for="sex_male">male</label>
+                <input type="radio" id="sex_female" name="sex" value="female">
+                <label for="sex_female">female</label>
+                <br /><br />
+            </fieldset>
+            Interest:
+            <input type="checkbox" name="interest" value="Reading">Reading
+            <input type="checkbox" name="interest" value="Singing">Singing
+            <input type="checkbox" name="interest" value="Game">Game
+            <input type="checkbox" name="interest" value="Sleeping">Sleeping
+            <!-- NOTE value는 결과를 받는 서버가 받는 값임 뒤에를 위에 예시처럼 라벨로 만들어도 됨 
+            라벨로 만들 시 id를 적고 연결시켜주어야 함 -->
+            <br /><br />
+            E-mail:
+            <input type="text" id="email" name="email">@
+            <select name="emailDomain" id="emailDomain">
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>hanmail.net</option>
+            </select>
+            <br /><br />
+            직무 분야:
+            <select name="work_interest" id="work_interest" multiple="multiple">
+                <optgroup label="Program">
+                    <option>웹</option>
+                    <option>응용프로그램</option>
+                    <option>모바일 앱</option>
+                </optgroup>
+                <optgroup label="Design">
+                    <option>산업 디자인</option>
+                    <option>UI 디자인</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            Profile Image: <input type="file" id="profile" name="profile">
+            <br /><br />
+            <textarea name="memo" id="memo" cols="70" rows="4"></textarea>
+            <br />
+            <input type="reset" name="btnRest" value="입력 취소" />
+            <input type="button" name="btnCommon" value="버튼" onclick="javascript:alert('설정된 기능이 없습니다');"/>
+            <input type="submit" name="btnSubmit" value="전송" />
+            <br />
+            <button type="reset">입력 취소</button>
+            <button type="button">버튼</button>
+            <button type="submit">전송</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Table & Form test</title>
+    </head>
+    <body>
+        <!-- SECTION Table Start -->
+        <table border="2">
+            <thead>
+                <tr>
+                    <td>Number</td>
+                    <td>Name</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>Mike</td>
+                </tr>
+                <tr>
+                    <td>Nick</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- !SECTION Table End -->
+        <br /><br /><br />
+
+        <h2>GET 방식으로 전송하기</h2>
+        <form action="results.html" method="get">
+            <input type="text" name="userName" />
+            <input type="submit" name="btnSubmit" value="전송" />
+        </form>
+
+        <h2>POST 방식으로 전송하기</h2>
+        <form action="results.html" method="post">
+            <input type="text" name="userName" />
+            <input type="submit" name="btnSubmit" />
+        </form>
+       
+
+    </body>
+</html>
