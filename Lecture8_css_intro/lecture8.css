@@ -1,0 +1,14 @@
+* {font-size: 30px;}
+
+div {background-color: orange;}
+span {background-color: aqua;}
+
+#divRed {background-color: red;}
+
+.divBlack {background-color: black; color: white;}
+
+#content h1 {color: purple;}
+#content > h1 {color: blue;}
+
+nav li:active {color: red;}
+nav li:hover {background-color: orange;}
